@@ -1,0 +1,47 @@
+<form action="https://formsubmit.co/sushant.atram@optitaxs.com" method="POST" id="feedback-form" class="feedback-form">
+    <h2 class="form-title">We'd Love Your Feedback!</h2>
+
+    <!-- Name Field -->
+    <div class="form-group2">
+        <label for="user-name" class="form-label">Name</label>
+        <input type="text" id="user-name" name="name" class="form-input" placeholder="Enter your name" required />
+    </div>
+
+    <div class="form-group2">
+        <label for="user-email" class="form-label">Email</label>
+        <input type="email" id="user-email" name="email" class="form-input" placeholder="Enter your email" required />
+    </div>
+
+    <div class="form-group">
+        <label class="form-label">How was your experience with MOOWR Utility?</label>
+        <div class="input-q">
+            <label><input type="checkbox" name="experience" value="Great"> Great</label>
+            <label><input type="checkbox" name="experience" value="Good"> Good</label>
+            <label><input type="checkbox" name="experience" value="Average"> Average</label>
+            <label><input type="checkbox" name="experience" value="Needs Improvement"> Needs Improvement</label>
+        </div>
+    </div>
+
+    <div class="form-group">
+        <label for="user-feedback" class="form-label">Additional Feedback</label>
+        <textarea id="user-feedback" name="feedback" class="form-input" rows="4" placeholder="Share your thoughts..." required></textarea>
+    </div>
+
+    <div class="form-group">
+        <label for="newsletter-opt-in" class="form-label">Subscribe to our Newsletter?</label>
+        <div class="checkbox-wrapper">
+            <input type="checkbox" id="newsletter-opt-in" name="subscribeNewsletter" class="form-checkbox" />
+            <label for="newsletter-opt-in">Yes, I want to stay updated!</label>
+        </div>
+    </div>
+
+    <!-- Hidden Fields for FormSubmit -->
+    <input type="hidden" name="_captcha" value="false">
+    <input type="hidden" name="_autoresponse" value="Thank you for your feedback!">
+    <input type="hidden" name="_next" value="http://127.0.0.1:5502/">
+
+    <div class="submit-skip">
+        <div class="skip-btn" id="skip">Skip and Download</div>
+        <button type="submit" id="submit-download" class="submit-btn">Submit & Download Report</button>
+    </div>
+</form>
